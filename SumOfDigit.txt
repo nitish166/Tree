@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int digitSum(int num)
+{
+    int sum=0;
+    while(num !=0)
+    {
+        sum =sum+num%10;
+        num /=10;
+    }
+    return sum;
+}
+int main() {
+
+	// Write your code here
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+   
+        int result=digitSum(n);
+        cout<<result<<endl;
+    }
+}
