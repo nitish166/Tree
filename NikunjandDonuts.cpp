@@ -12,13 +12,12 @@ int main()
     }
     sort(arr,arr+n, greater<int>());
     long int multi=1;
-    long int sum=0;
     for(int i=0;i<n;i++)
     {
-        multi =arr[i]*2^i;
-        sum +=multi;
+        multi +=arr[i]*pow(2,i);
+        
     }
-    cout<<sum<<endl;
+    cout<<multi<<endl;
     
     return 0;
 }
